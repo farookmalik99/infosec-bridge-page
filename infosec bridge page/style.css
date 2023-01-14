@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* -----------------------container section starts------------------------ */
+
+
+.container .logo img {
+    width: 20rem;
+    margin: 2.5rem 0;
+}
+
+.container .content h4 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* -----------------------container section ends------------------------ */
+
+
+/* -----------------------loginpage section starts------------------------ */
+
+
+.loginpage {
+    margin: 4rem 0;
+}
+
+.loginpage .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.loginpage .head #login {
+    padding-bottom: 1rem;
+    border-bottom: 7px solid #ff0160;
+    width: 15rem;
+    text-align: center;
+}
+
+.loginpage .head #signup {
+    padding-bottom: 1rem;
+    font-weight: inherit;
+}
+
+.loginpage form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginpage form input {
+    font-size: 1.5rem;
+    padding: 15px 25px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid black;
+    margin-bottom: 30px;
+}
+
+.loginpage form .btn {
+    color: white;
+    border: 2px solid #ff0160;
+    background-color: #ff0160;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.loginpage h4 {
+    text-align: end;
+    color: #ff1060;
+    letter-spacing: 1px;
+
+}
+
+/* -----------------------loginpage section ends------------------------ */
+
+/* -----------------------footer section starts------------------------ */
+
+.footer p {
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.footer .share {
+    margin: 1.5rem 0;
+    margin-left: 15px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .share i {
+    border: 1px solid gray;
+    width: 70px;
+    display: inline-block;
+    height: 70px;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.footer .share img {
+    margin-right: 2rem;
+    width: 70px;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.bi-twitter {
+    padding: 4px 0;
+    color: #3c85fc;
+}
+
+.fa-facebook-f {
+    padding: 12px 0;
+    color: #0b0b81;
+}
+
+.footercontent {
+    line-height: 3;
+}
+
+.footercontent p {
+    color: black;
+}
+
+.footercontent p span {
+    color: #ff0160;
+    font-weight: bold;
+}
+
+.footercontent .last {
+    text-decoration: underline;
+    color: #ff0160;
+}
+
+/* -----------------------footer section ends------------------------ */
+
+@media (max-width: 600px) {
+    .loginpage {
+        width: 90vw;
+    }
+
+    .loginpage .head #login {
+        width: 10rem;
+    }
+
+    .share {
+        margin-left: auto;
+    }
+}
